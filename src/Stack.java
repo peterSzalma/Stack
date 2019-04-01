@@ -16,6 +16,15 @@ public class Stack {
         System.out.println(i + " pushed into stack");
     }
 
+    public int pop() {
+        System.out.println("Removing " + peek());
+        return stackArray[top--];
+    }
+
+    public int peek() {
+        return stackArray[top];
+    }
+
     @Override
     public String toString() {
         return "stackArray=" + Arrays.toString(stackArray);

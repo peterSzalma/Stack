@@ -6,5 +6,7 @@ public class App {
         stack.push(50);
         stack.push(60);
         System.out.println(stack.toString());
+        stack.pop();
+        System.out.println("Top: " + stack.peek());
     }
 }
