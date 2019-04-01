@@ -10,4 +10,14 @@ public class Stack {
         stackArray = new int[max];
         top = -1;
     }
+
+    public void push(int i) {
+        stackArray[++top] = i;
+        System.out.println(i + " pushed into stack");
+    }
+
+    @Override
+    public String toString() {
+        return "stackArray=" + Arrays.toString(stackArray);
+    }
 }
