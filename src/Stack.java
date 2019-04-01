@@ -25,6 +25,10 @@ public class Stack {
         return stackArray[top];
     }
 
+    public int size() {
+        return top + 1;
+    }
+
     public boolean isEmpty() {
         return (top == -1);
     }
