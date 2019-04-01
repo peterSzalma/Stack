@@ -25,6 +25,15 @@ public class Stack {
         return stackArray[top];
     }
 
+    public boolean isEmpty() {
+        return (top == -1);
+    }
+
+    public boolean isFull() {
+        return (top == maxSize - 1);
+    }
+
+
     @Override
     public String toString() {
         return "stackArray=" + Arrays.toString(stackArray);

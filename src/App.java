@@ -8,5 +8,13 @@ public class App {
         System.out.println(stack.toString());
         stack.pop();
         System.out.println("Top: " + stack.peek());
+
+        if (stack.isEmpty()) {
+            System.out.println("Stack is Empty!");
+        } else if (stack.isFull()) {
+            System.out.println("Stack is Full!");
+        } else {
+            System.out.println("Stack is Not Empty!");
+        }
     }
 }
